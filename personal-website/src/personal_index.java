@@ -2,7 +2,7 @@
 public class personal_index {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println("到达这步，测试");
 
 	}
 
