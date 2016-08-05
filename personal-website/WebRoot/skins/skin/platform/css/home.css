@@ -1,0 +1,222 @@
+ul, ol, li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.navbar {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none;
+	user-select: none; 	
+	font-size: 12px;
+	color: #fff;
+	min-height: 54px;
+	background-color: #0089cc;
+	border-bottom: none;
+	padding: 0 20px;
+}
+.navbar-header {
+	height: 54px;
+}
+.navbar-brand {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+	width: 252px;
+	height: 54px;
+	line-height: 54px;
+	padding: 0px;
+	padding-left: 66px;
+	background: url(../img/main-logo.png) no-repeat;
+	background-position: 0 11px;
+}
+.navbar-brand:hover {
+	color: #fff;
+}
+.navbar-navigation > ul > li {
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	line-height: 54px;
+	padding: 0px 20px;
+	float: left;
+}
+.navbar-navigation > ul > li:first-child {
+	margin-left: 40px;
+	text-align: center;
+}
+.navbar-navigation ul li:hover {
+	cursor:pointer;
+	font-weight: bold;
+	background-color: #3e99ff;
+}
+.navbar-personal {
+	float: right;
+}
+.navbar-personal .dropdown, .navbar-personal > ul, .navbar-personal > ul > li {
+	float: left;
+}
+.navbar-personal a {
+	color: #fff;
+	line-height: 54px;
+	font-family: SimSun;
+	font-size: 12px;
+}
+.navbar-personal > ul > li {
+	height: 54px;
+	line-height: 54px;
+	padding: 0px 5px;
+}
+.navbar-personal > ul > li:last-child {
+	margin-right: 5px;
+}
+.navbar-personal > ul > li > a {
+	font-size: 20px;
+	color: #80c4e6;
+}
+.dropdown li {
+	height: 30px;
+	line-height: 30px;
+}
+.dropdown > a {
+	padding-left: 30px;
+	padding-right: 16px;
+}
+.activedTopMenu {
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #3e99ff;
+}
+.ue-menu-wrap {
+	top: 54px;
+}
+.ue-menu-left {
+	overflow: visible;
+}
+.ue-left-top {
+	color: #3e99ff;
+	font-size: 16px;
+	font-weight: bold;
+	height: 85px;
+	line-height: 85px;
+	padding-left: 40px;
+	background-color: #203140;
+}
+.ue-left-top img {
+	margin-right: 20px;
+}
+.ue-left-content {
+	top: 85px;
+}
+.ue-vmenu ul li:hover {
+	cursor:pointer;
+}
+.ue-vmenu ul li a {
+	color: #d0e1e8;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	line-height: 48px;
+	padding-left: 30px;
+	border-left: 4px solid transparent;
+}
+.ue-vmenu ul li a i {
+	float: right;
+	margin-right: 35px;
+	line-height: 48px;
+}
+.slideBlock {
+	position: absolute;
+	color: #fff;
+	width: 16px;
+	height: 60px;
+	line-height: 60px;
+	top: 50%;
+	left: 100%;
+	margin-top: -30px;
+	background-color: #203140;
+	border-radius: 0px 4px 4px 0px;
+	cursor: pointer;
+}
+.ue-menu-right {
+	background-color: #eee;
+}
+.ue-right-top {
+	color: #666;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #d6d6d6;
+	box-shadow: none;
+}
+.ue-right-top {
+	padding-left: 15px;
+}
+.ue-right-top span.mainCrumb {
+	color: #3e99ff;
+}
+.ue-right-content {
+	top: 31px;
+}
+/*** 覆盖vmenu ***/
+.ue-vmenu {
+	background-color: #283c4f;
+}
+.ue-vmenu ul li a:focus, .ue-vmenu ul li a:hover, .ue-vmenu li.curr a {
+	color: #d0e1e8;
+	border-left: 4px solid #d0e1e8;
+	background-color: #334657;
+}
+.ue-vmenu .ue-vmenu-icon {
+	display: none;
+}
+.ue-vmenu ul li .active:after, .ue-vmenu ul li .inactive:after {
+	font-size: 16px;
+	content:"\f105";
+}
+.ue-vmenu ul li .active:after {
+	color: #fff;
+	content:"\f107";
+}
+
+/***覆盖dropdown***/
+.ue-dropdown-menu {
+	background-color: #3e99ff;
+	margin-top: 0px;
+	border: none;
+	min-width: 132px;
+	padding-bottom: 5px;
+}
+.ue-dropdown-menu > li > a {
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+}
+.ue-dropdown-menu li a:hover {
+	background-color: #0089cc;
+}
+.open {
+	background-color: #3e99ff;
+}
+
+/* 自适应 */
+@media screen and (max-width: 1024px) { 
+	.navbar-navigation > ul > li:first-child {
+		margin-left: 20px;
+	}
+	.navbar-navigation ul li {
+		padding: 0 15px;
+	}
+	.ue-menu-left {
+		width: 210px;
+	}
+	.ue-left-top img {
+		margin-left: -15px;
+	}
+	.ue-menu-right {
+		left: 210px;
+	}
+}
