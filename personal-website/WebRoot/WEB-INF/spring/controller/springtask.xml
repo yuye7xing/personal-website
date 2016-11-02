@@ -2,6 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans" 
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:task="http://www.springframework.org/schema/task"
 	xmlns:p="http://www.springframework.org/schema/p" 
 	xmlns:mvc="http://www.springframework.org/schema/mvc" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -11,8 +12,20 @@
                     http://www.springframework.org/schema/context/spring-context-3.1.xsd
                     http://www.springframework.org/schema/mvc
                     http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+                    http://www.springframework.org/schema/task  
+					http://www.springframework.org/schema/task/spring-task-3.1.xsd
                     ">
-
+     <!-- 定时器开关-->
+	<context:annotation-config /> 
 	<!-- 注释资源扫描包路径 -->
-	<context:component-scan base-package="personal.home.controller" />
+	<context:component-scan base-package="dsrw.test" />
+	<task:annotation-driven /> 
+	 <!--  <bean id="myTaskXml" class="dsrw.test.taskxml"></bean>   -->  
+    <task:scheduled-tasks>    
+        <!--   
+            这里表示的是每隔五秒执行一次   
+        -->    
+        <task:scheduled ref="myTaskXml" method="job2" cron="*/5 * * * * ?" />    
+        <task:scheduled ref="myTaskXml" method="job3" cron="*/10 * * * * ?"/>    
+    </task:scheduled-tasks> 
 </beans>     
