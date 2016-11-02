@@ -12,5 +12,5 @@
                     ">
 
 	<!-- 注释资源扫描包路径 -->
-	<context:component-scan base-package="personal.**.service" />
+	<context:component-scan base-package="com.inspur.demo.**.service" />
 </beans>     
