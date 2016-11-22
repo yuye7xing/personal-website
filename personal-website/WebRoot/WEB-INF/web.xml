@@ -87,7 +87,7 @@
 
 	<!-- 默认登录页配置 -->
 	<welcome-file-list>
-		<welcome-file>service/home/index</welcome-file>
+		<welcome-file>/service/kmap/index</welcome-file>
 	</welcome-file-list>
 	
 	<!-- 错误页面的跳转配置 -->
